@@ -249,3 +249,8 @@ puts
 puts 'Post Order:'
 my_tree.post_order { |n| arr << n.data }
 p arr # eg. [9, 15, 10, 39, 52, 51, 53, 55, 54, 50, 32, 64, 72, 66, 84, 100, 78, 58]
+
+# Rebalance unbalanced tree
+my_tree.rebalance
+puts my_tree.balanced?
+
